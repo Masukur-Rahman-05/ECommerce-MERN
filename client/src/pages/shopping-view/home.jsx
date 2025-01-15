@@ -173,6 +173,7 @@ function ShoppingHome() {
                   handleNavigateToListingPage(categoryItem, "category")
                 }
                 className="cursor-pointer hover:shadow-lg transition-shadow"
+                key={categoryItem}
               >
                 <CardContent className="flex flex-col items-center justify-center p-6">
                   <categoryItem.icon className="w-12 h-12 mb-4 text-primary" />
@@ -192,6 +193,7 @@ function ShoppingHome() {
               <Card
                 onClick={() => handleNavigateToListingPage(brandItem, "brand")}
                 className="cursor-pointer hover:shadow-lg transition-shadow"
+                key={brandItem}
               >
                 <CardContent className="flex flex-col items-center justify-center p-6">
                   <brandItem.icon className="w-12 h-12 mb-4 text-primary" />
@@ -215,6 +217,7 @@ function ShoppingHome() {
                     handleGetProductDetails={handleGetProductDetails}
                     product={productItem}
                     handleAddtoCart={handleAddtoCart}
+                    key={productItem._id}
                   />
                 ))
               : null}
