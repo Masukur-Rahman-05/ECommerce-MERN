@@ -72,23 +72,6 @@ function ShoppingHome() {
     navigate(`/shop/listing`);
   }
 
-  // function handleNavigateToListingPage(getCurrentItem, section) {
-  //   // Add console.log to check what's being passed
-  //   console.log('getCurrentItem:', getCurrentItem);
-  //   console.log('section:', section);
-    
-  //   sessionStorage.removeItem("filters");
-  //   const currentFilter = {
-  //     [section]: [getCurrentItem.id],
-  //   };
-    
-  //   // Add console.log to check the filter being created
-  //   console.log('currentFilter:', currentFilter);
-  
-  //   sessionStorage.setItem("filters", JSON.stringify(currentFilter));
-  //   navigate(`/shop/listing`);
-  // }
-
   function handleGetProductDetails(getCurrentProductId) {
     dispatch(fetchProductDetails(getCurrentProductId));
   }
